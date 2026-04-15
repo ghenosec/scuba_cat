@@ -24,5 +24,4 @@ class Config:
     gif_path: Path = ASSETS / "scuba_cat.gif"
     reference_path: Path = ASSETS / "reference_dance.json"
 
-
 CFG = Config()
