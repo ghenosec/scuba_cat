@@ -5,7 +5,6 @@ import cv2
 import numpy as np
 from PIL import Image, ImageSequence
 
-
 class GifOverlay:
     def __init__(
         self,
