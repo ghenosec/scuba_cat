@@ -5,8 +5,6 @@ mp_face = mp.solutions.face_detection
 
 
 class FaceDetector:
-    """Lightweight face detector — we only need the nose tip keypoint."""
-
     NOSE_TIP_INDEX = 2
 
     def __init__(self, min_confidence: float = 0.5):
