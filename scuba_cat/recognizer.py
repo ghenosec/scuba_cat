@@ -10,7 +10,6 @@ FINGER_MCP_IDS = (2, 5, 9, 13, 17)
 
 
 def is_fist(hand: np.ndarray, tolerance: float = 1.1) -> bool:
-    """Return True if the 4 non-thumb fingers look curled."""
     wrist = hand[0]
     folded = 0
     for tip, pip in zip((8, 12, 16, 20), (6, 10, 14, 18)):
@@ -59,12 +58,6 @@ def count_cycles(values: np.ndarray, min_amplitude: float) -> int:
 
 
 class ScubaRecognizer:
-    """Detects: one hand touching the nose + other hand in a fist + shaking.
-
-    The shaking is measured as oscillations of the fist's center of mass in X or Y
-    within a short temporal window.
-    """
-
     def __init__(
         self,
         window_s: float = 1.5,
