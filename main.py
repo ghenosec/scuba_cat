@@ -9,7 +9,6 @@ from scuba_cat.hand_tracker import HandTracker
 from scuba_cat.overlay import GifOverlay
 from scuba_cat.recognizer import ScubaRecognizer
 
-
 def draw_progress_bar(frame, progress: float, armed: bool):
     h, w = frame.shape[:2]
     bar_w = int(w * 0.5)
@@ -26,7 +25,7 @@ def draw_progress_bar(frame, progress: float, armed: bool):
 def main():
     if sys.version_info >= (3, 13):
         print(
-            "ERRO: MediaPipe nao suporta Python >= 3.13. Use Python 3.11 ou 3.12.",
+            "ERRO: MediaPipe não suporta python >= 3.13. Use Python 3.11 ou 3.12.",
             file=sys.stderr,
         )
         sys.exit(1)
@@ -55,9 +54,9 @@ def main():
             )
             print(f"GIF carregado: {CFG.gif_path}")
         except Exception as e:
-            print(f"AVISO: nao foi possivel carregar o GIF ({e}). Rodando sem overlay.")
+            print(f"AVISO: não foi possivel carregar o GIF ({e}). Rodando sem overlay.")
     else:
-        print(f"AVISO: GIF nao encontrado em {CFG.gif_path}.")
+        print(f"AVISO: GIF não encontrado em {CFG.gif_path}.")
 
     with WebcamCapture(CFG.camera_index, CFG.frame_width, CFG.frame_height) as cam:
         while True:
@@ -98,7 +97,7 @@ def main():
             )
             cv2.putText(
                 frame,
-                "uma mao no nariz + outra fechada chacoalhando",
+                "uma mão no nariz + outra fechada chacoalhando devagar",
                 (10, 55),
                 cv2.FONT_HERSHEY_SIMPLEX, 0.5, (200, 200, 200), 1,
             )
