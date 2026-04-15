@@ -4,7 +4,7 @@ Aplicação em Python que utiliza visão computacional para detectar um
 gesto específico com as mãos e o rosto. Quando o gesto é reconhecido, um
 overlay animado (GIF) é exibido na tela em tempo real.
 
-assets/scuba_cat.gif
+![scuba cat](./assets/scuba_cat.gif)
 
 ------------------------------------------------------------------------
 
