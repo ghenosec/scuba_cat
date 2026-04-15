@@ -1,4 +1,4 @@
-# Scuba Cat
+# Scuba Cat 🤿🐱
 
 Aplicação em Python que utiliza visão computacional para detectar um
 gesto específico com as mãos e o rosto. Quando o gesto é reconhecido, um
@@ -19,9 +19,9 @@ visão computacional para identificar:
 
 Para ativar o reconhecimento:
 
-1.  Uma mão deve estar tocando o nariz\
-2.  A outra mão deve estar fechada (punho)\
-3.  A mão fechada deve estar em movimento de "chacoalhar"
+    1. Uma mão deve estar tocando o nariz
+    2. A outra mão deve estar fechada (punho)
+    3. A mão fechada deve estar em movimento de "chacoalhar" para direita e para s
 
 Quando o gesto é detectado corretamente, o scuba cat é exibido.
 
