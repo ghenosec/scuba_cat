@@ -8,7 +8,7 @@ class WebcamCapture:
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, height)
         self.cap.set(cv2.CAP_PROP_FPS, 30)
         if not self.cap.isOpened():
-            raise RuntimeError(f"Cannot open webcam index {index}")
+            raise RuntimeError(f"Webcam {index} not accessible")
 
     def read(self):
         ok, frame = self.cap.read()
