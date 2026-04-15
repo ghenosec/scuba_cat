@@ -6,7 +6,6 @@ mp_hands = mp.solutions.hands
 mp_draw = mp.solutions.drawing_utils
 mp_styles = mp.solutions.drawing_styles
 
-
 class HandTracker:
     def __init__(self, max_hands=2, det_conf=0.6, trk_conf=0.5):
         self.hands = mp_hands.Hands(
